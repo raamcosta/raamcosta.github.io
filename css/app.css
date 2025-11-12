@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	min-height: 100%;
+	min-height: 100vh;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -14,7 +14,7 @@ body {
 	-webkit-align-items: center;
 	-webkit-box-align: center;
 	align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     -ms-flex-align: center;
     padding: 40px 16px;
     box-sizing: border-box;
@@ -241,7 +241,7 @@ a {
   }
 /* --- Added styles for updated UI and Featured Project --- */
 main {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -360,3 +360,39 @@ main {
   .badge { height: 18px; }
   .skill-icon { width: 22px; height: 22px; }
 }
+
+/* Layout: main centered, Featured Projects anchored to the right */
+.layout {
+  display: block;
+}
+
+/* Keep main column at a comfortable width and centered */
+.col-main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Anchor sidebar to right edge on larger screens */
+.col-aside {
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  width: 360px;
+  text-align: left;
+  z-index: 2;
+}
+
+/* Stack on smaller screens */
+@media (max-width: 900px){
+  .layout { display: block; }
+  .col-aside {
+    position: static;
+    right: auto;
+    top: auto;
+    width: auto;
+    margin-top: 24px;
+    z-index: auto;
+  }
+}
+/* Vertical stack for multiple project cards */
+#featured .card + .card { margin-top: 12px; }

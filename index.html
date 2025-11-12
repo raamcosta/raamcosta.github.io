@@ -28,63 +28,65 @@
   <body class="background-1">
 
     <main>
-
-	    <div id="photo" class="circle animated pulse">
-      </div>
-      
-      <h1 id="name">
-        <span>Rafael Costa</span>
-      </h1>
-      
-      <div class='parent inline-flex-parent'>
-        <div class="child skills-icons" aria-label="Technologies: Kotlin, Android, Swift, iOS">
-          <img class='skill-icon' src="https://cdn.simpleicons.org/kotlin" alt="Kotlin" title="Kotlin" />
-          <img class='skill-icon' src="https://cdn.simpleicons.org/android" alt="Android" title="Android" />
-          <img class='skill-icon' src="https://cdn.simpleicons.org/swift" alt="Swift" title="Swift" />
-          <img class='skill-icon' src="https://cdn.simpleicons.org/apple" alt="iOS" title="iOS" />
-        </div>
-        <p class='child' id="skills">
-          Mobile Software Engineer
-        </p>
-      </div>
-
-      <p class='tagline'>Primary focus on Kotlin Multiplatform and Android; also experienced with native iOS.</p>
-
-      <section id="featured">
-        <h2 class="section-title">Featured Project</h2>
-        <div class="card">
-          <h3>Compose Destinations</h3>
-          <p>A type-safe navigation library for Jetpack Compose that makes navigation simple, scalable, and delightful.</p>
-          <div class="card-actions">
-            <a class="btn btn-gh" href="https://github.com/raamcosta/compose-destinations" target="_blank" rel="noopener" aria-label="Open Compose Destinations on GitHub">
-              <i class="fab fa-github" aria-hidden="true"></i> GitHub
-            </a>
-            <span class="chip" id="repo-stars" title="GitHub stars">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <span id="star-count" aria-live="polite">—</span>
-            </span>
+      <div class="layout">
+        <div class="col-main">
+	        <div id="photo" class="circle animated pulse"></div>
+          
+          <h1 id="name">
+            <span>Rafael Costa</span>
+          </h1>
+          
+          <div class='parent inline-flex-parent'>
+            <div class="child skills-icons" aria-label="Technologies: Kotlin, Android, Swift, iOS">
+              <img class='skill-icon' src="https://cdn.simpleicons.org/kotlin" alt="Kotlin" title="Kotlin" />
+              <img class='skill-icon' src="https://cdn.simpleicons.org/android" alt="Android" title="Android" />
+              <img class='skill-icon' src="https://cdn.simpleicons.org/swift" alt="Swift" title="Swift" />
+              <img class='skill-icon' src="https://cdn.simpleicons.org/apple" alt="iOS" title="iOS" />
+            </div>
+            <p class='child' id="skills">
+              Mobile Software Engineer
+            </p>
           </div>
+
+          <p class='tagline'>Primary focus on Kotlin Multiplatform and Android; also experienced with native iOS.</p>
+
+          <nav class="hi-icon-wrap hi-icon-effect-8">
+            <a href="mailto:rafael.alexm.costa@gmail.com" target="_blank" aria-label="Email Rafael" rel="noopener">
+              <div class="hi-icon fa fa-envelope" aria-hidden="true"></div>
+            </a>
+            <a href="https://github.com/raamcosta" target="_blank" aria-label="Rafael on GitHub" rel="noopener">
+              <div class="hi-icon fab fa-github" aria-hidden="true"></div>
+            </a>
+            <a href="https://linkedin.com/in/rafaelamcosta" target="_blank" aria-label="Rafael on LinkedIn" rel="noopener">
+              <div class="hi-icon fab fa-linkedin" aria-hidden="true"></div>
+            </a>
+            <a href="https://twitter.com/raamcosta" target="_blank" aria-label="Rafael on Twitter/X" rel="noopener">
+              <div class="hi-icon fab fa-twitter" aria-hidden="true"></div>
+            </a>
+            <a href="https://medium.com/@rafaelamcosta" target="_blank" aria-label="Rafael on Medium" rel="noopener">
+              <div class="hi-icon fab fa-medium" aria-hidden="true"></div>
+            </a>
+          </nav>
         </div>
-      </section>
-
-      <nav class="hi-icon-wrap hi-icon-effect-8">
-        <a href="mailto:rafael.alexm.costa@gmail.com" target="_blank" aria-label="Email Rafael" rel="noopener">
-          <div class="hi-icon fa fa-envelope" aria-hidden="true"></div>
-        </a>
-        <a href="https://github.com/raamcosta" target="_blank" aria-label="Rafael on GitHub" rel="noopener">
-          <div class="hi-icon fab fa-github" aria-hidden="true"></div>
-        </a>
-        <a href="https://linkedin.com/in/rafaelamcosta" target="_blank" aria-label="Rafael on LinkedIn" rel="noopener">
-          <div class="hi-icon fab fa-linkedin" aria-hidden="true"></div>
-        </a>
-        <a href="https://twitter.com/raamcosta" target="_blank" aria-label="Rafael on Twitter/X" rel="noopener">
-          <div class="hi-icon fab fa-twitter" aria-hidden="true"></div>
-        </a>
-        <a href="https://medium.com/@rafaelamcosta" target="_blank" aria-label="Rafael on Medium" rel="noopener">
-          <div class="hi-icon fab fa-medium" aria-hidden="true"></div>
-        </a>
-      </nav>
-
+        <aside class="col-aside" aria-label="Featured Projects">
+          <section id="featured">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="card">
+              <h3>Compose Destinations</h3>
+              <p>A type-safe navigation library for Jetpack Compose that makes navigation simple, scalable, and delightful.</p>
+              <div class="card-actions">
+                <a class="btn btn-gh" href="https://github.com/raamcosta/compose-destinations" target="_blank" rel="noopener" aria-label="Open Compose Destinations on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+                <span class="chip" id="repo-stars" title="GitHub stars">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span id="star-count" aria-live="polite">—</span>
+                </span>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
     </main>
 
     <script>
