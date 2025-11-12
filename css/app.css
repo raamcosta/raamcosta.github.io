@@ -375,8 +375,8 @@ main {
 /* Anchor sidebar to right edge on larger screens */
 .col-aside {
   position: fixed;
-  right: 24px;
-  top: 24px;
+  right: 32px;
+  top: 120px; /* moved a little further down from 24px */
   width: 360px;
   text-align: left;
   z-index: 2;
@@ -396,3 +396,38 @@ main {
 }
 /* Vertical stack for multiple project cards */
 #featured .card + .card { margin-top: 12px; }
+
+/* Project title with icon */
+.project-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px 0; /* match card h3 spacing */
+}
+.project-title .project-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* Make the title (icon + text) a clean, accessible link */
+.project-title .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.project-title .project-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.project-title .project-link:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (max-width: 500px){
+  .project-title .project-icon { width: 20px; height: 20px; }
+}
