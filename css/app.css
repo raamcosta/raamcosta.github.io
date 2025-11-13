@@ -213,11 +213,20 @@ a {
 }
 
 .background-1 {
-	background: #000000;
-	background-image: -webkit-radial-gradient(top, circle cover, #646464 0%, #131212 80%);
-	background-image: -moz-radial-gradient(top, circle cover, #646464 0%, #131212 80%);
-	background-image: -o-radial-gradient(top, circle cover, #646464 0%, #131212 80%);
-	background-image: radial-gradient(top, circle cover, #646464 0%, #131212 80%);
+  /* Solid fallback to avoid seams when scrolling on mobile */
+  background-color: #131212;
+  position: relative;
+}
+
+/* Use a fixed, viewport-sized gradient layer to avoid tiling/compositing artifacts
+   that can cause a lighter band below the initial viewport on some mobile browsers */
+.background-1::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #646464 0%, #131212 80%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 
